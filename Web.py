@@ -28,7 +28,7 @@ def main():
     with col1:
         st.text('Please Select Stock')
         sd = []
-        path = 'C://Users//shubh//Anaconda_Python//DE 5 sem//WEBSITE//data'
+        path = './data'
         for x in os.listdir(path):
 #             if x.endswith(".csv"):
                 # Prints only text file present in My Folder

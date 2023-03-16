@@ -27,6 +27,6 @@ def indiOut(df):
     fig.add_trace(go.Scatter(x=df[df['Position'] == 1].index, y=df['20_SMA'][df['Position'] == 1],
                         mode='markers', name='Buy', marker_color='green', marker_symbol='diamond', marker_size=7))
     fig.add_trace(go.Scatter(x=df[df['Position'] == -1].index, y=df['20_SMA'][df['Position'] == -1],
-                        mode='markers', name='Buy', marker_color='red', marker_symbol='diamond', marker_size=7))
+                        mode='markers', name='Sell', marker_color='red', marker_symbol='diamond', marker_size=7))
     fig.update_layout(title_text='Predicted Close Price With Indicators', font_size=15)
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
